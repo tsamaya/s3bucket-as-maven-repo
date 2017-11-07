@@ -105,7 +105,7 @@ Edit `build.gradle` file assuming below you started from a brand new project
       publications {
           mavenJava(MavenPublication) {
               groupId mvnGroupId
-              artifactId mvnArtifactId
+              artifactId rootProject.name
               version version
 
               from components.java
