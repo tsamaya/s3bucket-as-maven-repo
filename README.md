@@ -82,6 +82,11 @@ Edit `build.gradle` file assuming below you started from a brand new project
   }
   ```
 
+Don't put your actual AWS_ACCESS_KEY and AWS_SECRET_KEY directly in your build file. Create a specific gradle.properties file in my home directory: `~/.gradle/gradle.properties`
+
+    AWS_ACCESS_KEY=<your-aws-access-key>
+    AWS_SECRET_KEY=<your-super-secret-key>
+
   * now you can pull your dependencies from your S3 Bucket
 
   * for publishing add a `publishing` section
